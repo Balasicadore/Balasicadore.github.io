@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+.bg{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    box-shadow: inset 2000px 0 0 0 rgba(19, 55, 90, 0.75);
+    background:url(carter.jpg);
+}
+.bg {
+    background-repeat:no-repeat;
+    background-position:top;
+    background-size: cover;
+}
+
+.navmenu {
+    display:flex;
+    padding: 8px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navmenu img {
+    width: 250px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li :hover::after {
+    width: 100%;
+}
+
+
+.header h1 {
+    width: 700px;
+    color: #fff;
+    position: absolute;
+    top: 230px;
+    left: 200px;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+.header h2  {
+    width: 700px;
+    color: rgb(156, 155, 155);
+    position: absolute;
+    top: 330px;
+    left: 200px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*above: navigation bar*/
+
+/* body text */
+
+.body-text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.body-text h1 {
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row h3 {
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+
+.row p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px ;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+
+}
+
+.pic img {
+    background-position: center;
+    width: 100%;
+}
+
+@media(max-width: 800px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        left: 5%;
+
+    }
+
+    .header h2 {
+        left: 5%;
+    }
+
+    .body-text h1 {
+        font-size: 30px;
+    }
+}
+
+
